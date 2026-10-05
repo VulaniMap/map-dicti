@@ -1,2 +1,31 @@
 .Dictionary {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.Dictionary section {
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 10px;
+  padding: 40px;
+}
+.Dictionary label {
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  margin-bottom: 20px;
+  display: block;
+  line-height: 30px;
+}
+.Dictionary .search-input {
+  display: block;
+  height: 64px;
+  color: grey;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 22px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 100%;
 }
