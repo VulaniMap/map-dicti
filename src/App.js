@@ -19,23 +19,23 @@ function App() {
             {" "}
             Vulani Mapiyeye{" "}
           </a>{" "}
-          and is{" "}
+          and is open-sourced on{" "}
           <a
             href="https://github.com/VulaniMap/map-dicti"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
-            open-sourced on GitHub{" "}
+            GitHub{" "}
           </a>{" "}
-          and{" "}
+          and hosted on{" "}
           <a
             href="https://map-dicti.onrender.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             {" "}
-            hosted on Render{" "}
+            Render{" "}
           </a>{" "}
         </footer>
       </div>
