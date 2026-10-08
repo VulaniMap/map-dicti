@@ -5,7 +5,7 @@ import Phonetic from "./Phonetic.js";
 import "./Results.css";
 
 export default function Results(props) {
-  if (props.results && props.results.meanings) {
+  if (props.results.meanings) {
     return (
       <div className="Results">
         <section>
@@ -13,7 +13,7 @@ export default function Results(props) {
           <Phonetic phonetic={props.results.phonetic} />
         </section>
 
-        {props.results.meanings.slice(0, 1).map(function (meaning, index) {
+        {props.results.meanings.map(function (meaning, index) {
           return (
             <section key={index}>
               <Meaning meaning={meaning} />
