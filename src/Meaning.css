@@ -1,18 +1,19 @@
 .Meaning h3 {
   font-weight: 600;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.5;
   margin-bottom: 20px;
   color: black;
 }
-.Meaning p {
+.Meaning .Definition {
   font-size: 14px;
   line-height: 17px;
   color: black;
   margin: 20px 0 10px;
 }
-.Meaning em {
+.Meaning .Example {
   font-size: 13px;
+  font-style: italic;
   line-height: 15px;
-  color: grey;
+  opacity: 0.8;
 }

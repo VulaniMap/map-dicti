@@ -4,19 +4,14 @@ import Synonyms from "./Synonyms.js";
 import "./Meaning.css";
 
 export default function Meaning(props) {
-  console.log(props.meaning);
+  if (props.meaning);
   return (
     <div className="Meaning">
       <h3>{props.meaning.partOfSpeech}</h3>
 
-      <p>
-        <strong>Definition:</strong>
-        {props.meaning.definition}
-        <br />
+      <div className="Definition">{props.meaning.definition}</div>
+      <div className="Example">{props.meaning.example}</div>
 
-        <strong>Example:</strong>
-        <em> {props.meaning.example}</em>
-      </p>
       <Synonyms meaning={props.meaning} />
     </div>
   );
