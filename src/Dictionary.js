@@ -10,11 +10,6 @@ export default function Dictionary(props) {
   let [results, setResults] = useState({});
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState([]);
-  let [phonetic, setPhonetic] = useState({});
-
-  function handlePhoneticResponse(response) {
-    setPhonetic(response.data);
-  }
 
   function handleImages(response) {
     setPhotos(response.data.photos);
@@ -32,8 +27,6 @@ export default function Dictionary(props) {
     let apiKey = "aofcd5541add57c0396398488b47at43";
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}&_gl=1*1w60qyg*_up*MQ..*_ga*MTYyMTMzNDE0OS4xNzkwODYyOTg1*_ga_HB45F6ZNE6*czE3OTA4NjI5ODQkbzEkZzEkdDE3OTA4NjMwMjIkajIyJGwwJGgw`;
     axios.get(apiUrl).then(handleResponse);
-    let phoneticUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-    axios.get(phoneticUrl).then(handlePhoneticResponse);
   }
 
   function handleSubmit(event) {
@@ -64,7 +57,7 @@ export default function Dictionary(props) {
           </form>
           <small className="hint">i.e. travel, food</small>
         </section>
-        <Results results={results} phonetic={phonetic} />
+        <Results results={results} />
         <Photos photos={photos} />
       </div>
     );
